@@ -8,6 +8,7 @@ import { ApolloProvider } from '@apollo/client';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    {/* @ts-ignore = Still need to figure out how to fix client prop issue*/}
     <ApolloProvider client = { client }>
     <App />
     </ApolloProvider>
