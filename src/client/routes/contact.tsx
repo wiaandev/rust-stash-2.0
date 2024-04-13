@@ -1,7 +1,8 @@
 import { Form } from "react-router-dom";
+import { ContactType } from "../types/ContactTypes";
 
 export default function Contact() {
-  const contact = {
+  const contact: ContactType = {
     first: "Your",
     last: "Name",
     avatar: "https://placekitten.com/g/200/200",
@@ -13,10 +14,7 @@ export default function Contact() {
   return (
     <div id="contact">
       <div>
-        <img
-          key={contact.avatar}
-          src={contact.avatar || null}
-        />
+        <img key={contact.avatar} src={contact.avatar?.toString()} />
       </div>
 
       <div>
@@ -33,10 +31,7 @@ export default function Contact() {
 
         {contact.twitter && (
           <p>
-            <a
-              target="_blank"
-              href={`https://twitter.com/${contact.twitter}`}
-            >
+            <a target="_blank" href={`https://twitter.com/${contact.twitter}`}>
               {contact.twitter}
             </a>
           </p>
@@ -52,11 +47,7 @@ export default function Contact() {
             method="post"
             action="destroy"
             onSubmit={(event) => {
-              if (
-                !confirm(
-                  "Please confirm you want to delete this record."
-                )
-              ) {
+              if (!confirm("Please confirm you want to delete this record.")) {
                 event.preventDefault();
               }
             }}
@@ -69,7 +60,7 @@ export default function Contact() {
   );
 }
 
-function Favorite({ contact }) {
+function Favorite({ contact }: { contact: ContactType }) {
   // yes, this is a `let` for later
   let favorite = contact.favorite;
   return (
@@ -77,11 +68,7 @@ function Favorite({ contact }) {
       <button
         name="favorite"
         value={favorite ? "false" : "true"}
-        aria-label={
-          favorite
-            ? "Remove from favorites"
-            : "Add to favorites"
-        }
+        aria-label={favorite ? "Remove from favorites" : "Add to favorites"}
       >
         {favorite ? "★" : "☆"}
       </button>
