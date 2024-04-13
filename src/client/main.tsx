@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css';
-import client from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -24,12 +24,17 @@ const router = createBrowserRouter([
   },
 ]);
 
+const client = new ApolloClient({
+  uri: 'http://localhost:5000/graphql',
+  cache: new InMemoryCache(),
+});
+
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/* @ts-ignore = Still need to figure out how to fix client prop issue*/}
-    {/* <ApolloProvider client = { client }> */}
+    <ApolloProvider client = { client }>
     <RouterProvider router={router}/>
-    {/* </ApolloProvider> */}
+    </ApolloProvider>
   </React.StrictMode>,
 )
