@@ -1,25 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import { ApolloProvider } from "@apollo/client";
-import Root from "./routes/root.tsx";
+import {Root} from "./routes/root.tsx";
 import ErrorPage from "./pages/error-page.tsx";
-import Contact from "./routes/contact.tsx";
+import NewPage from "./pages/new-page.tsx";
+import Home from "./routes/home.tsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "contacts/:contactId",
-    element: <Contact />,
-  },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Root/>} errorElement={<ErrorPage/>}>
+      <Route index element={<Home/>}/>
+      <Route path="/error" element={<NewPage/>}/>
+    </Route>
+  )
+);
 
 const client = new ApolloClient({
   uri: "http://localhost:5000/graphql",
