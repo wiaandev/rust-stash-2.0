@@ -8,12 +8,15 @@ import {Root} from "./routes/root.tsx";
 import ErrorPage from "./pages/error-page.tsx";
 import NewPage from "./pages/new-page.tsx";
 import Home from "./routes/home.tsx";
+import Stash from "./pages/stash.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root/>} errorElement={<ErrorPage/>}>
       <Route index element={<Home/>}/>
-      <Route path="/error" element={<NewPage/>}/>
+      <Route path="error" element={<NewPage/>}/>
+      <Route path="stash" element={<Stash/>}/>
+      <Route path="map" element={<Stash/>}/>
     </Route>
   )
 );

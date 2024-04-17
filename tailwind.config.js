@@ -51,6 +51,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        rustRed:{
+          50: "#CE422B"
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
