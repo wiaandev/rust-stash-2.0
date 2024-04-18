@@ -8,6 +8,7 @@ import {Root} from "./routes/root.tsx";
 import ErrorPage from "./pages/error-page.tsx";
 import Home from "./routes/home.tsx";
 import Stash from "./pages/stash.tsx";
+import Register from "./pages/register.tsx";
 
 //TODO: rework to do object-based routing instead of JSX
 const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route index element={<Home/>}/>
       <Route path="stash" element={<Stash/>}/>
       <Route path="map" element={<Stash/>}/>
+      <Route path="register" element={<Register/>}/>
     </Route>
   )
 );

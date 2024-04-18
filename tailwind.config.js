@@ -52,7 +52,12 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         rustRed:{
-          50: "#CE422B"
+          50: "#CE422B",
+          100: "#d66755",
+          150: "#7a271a"
+        },
+        rustBlack:{
+          50: "#222424"
         }
       },
       borderRadius: {
