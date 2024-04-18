@@ -15,7 +15,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { registerUserSchema } from "../schema/schemas";
 
 export default function Register() {
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data);
   const form = useForm<FormValues>({
     defaultValues: {
         username: "",
