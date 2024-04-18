@@ -4,8 +4,6 @@ import "./index.css";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import {
   createBrowserRouter,
-  createRoutesFromElements,
-  Route,
   RouterProvider,
 } from "react-router-dom";
 import { ApolloProvider } from "@apollo/client";
@@ -17,19 +15,6 @@ import Register from "./pages/register.tsx";
 import Map from "./pages/map.tsx";
 import Overview from "./routes/overview.tsx";
 
-//TODO: rework to do object-based routing instead of JSX
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route path="/" element={<Root/>} errorElement={<ErrorPage/>}>
-//       <Route index element={<Home/>}/>
-//       <Route path="stash" element={<Stash/>}>
-//         <Route path="stash/:id" element={<Overview/>}/>
-//       </Route>
-//       <Route path="map" element={<Map/>}/>
-//       <Route path="register" element={<Register/>}/>
-//     </Route>
-//   )
-// );
 const router = createBrowserRouter([
   {
     path: "/",

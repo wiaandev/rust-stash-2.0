@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { FormValues, Inputs } from "../types/RegisterFormTypes";
+import { FormValues } from "../types/RegisterFormTypes";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { registerUserSchema } from "../schema/schemas";
 
