@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-[Table("User")]
-public class User
+[Table("UserStash")]
+public class UserStash
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
