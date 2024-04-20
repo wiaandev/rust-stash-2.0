@@ -6,11 +6,12 @@ public class UserStash
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int UserId { get; set; }
-    public required string Username { get; set; }
-    public required DateOnly BirthDate { get; set; }
-    public required string Email { get; set; }
-    public string ProfilePicture { get; set; } = string.Empty;
-    public DateTime CreatedOn { get; set; } = DateTime.Now;
+    public int UserStashId { get; set; }
+    [ForeignKey(nameof(Material))]
+    public required int MaterialId { get; set; }
+    [ForeignKey(nameof(User))]
+    public required int Owner { get; set; }
+    [ForeignKey(nameof(Base))]
+    public required int BaseSpecified { get; set; }
 
 }
