@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-public class MyApplicationDbContext : DbContext
+public class AppDbContext : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

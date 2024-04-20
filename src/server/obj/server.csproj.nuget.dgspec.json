@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\server.csproj": {}
+    "/Users/charleneferreira/rust-stash-2.0/src/server/server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\server.csproj": {
+    "/Users/charleneferreira/rust-stash-2.0/src/server/server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\server.csproj",
+        "projectUniqueName": "/Users/charleneferreira/rust-stash-2.0/src/server/server.csproj",
         "projectName": "server",
-        "projectPath": "C:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\server.csproj",
-        "packagesPath": "C:\\Users\\wiaan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\obj\\",
+        "projectPath": "/Users/charleneferreira/rust-stash-2.0/src/server/server.csproj",
+        "packagesPath": "/Users/charleneferreira/.nuget/packages/",
+        "outputPath": "/Users/charleneferreira/rust-stash-2.0/src/server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wiaan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/charleneferreira/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -61,6 +61,14 @@
               "target": "Package",
               "version": "[8.0.4, )"
             },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -85,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
