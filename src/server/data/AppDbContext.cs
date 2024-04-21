@@ -8,11 +8,11 @@ public class AppDbContext : DbContext
 
     }
 
-    DbSet<User> User { get; set; }
-    DbSet<UserStash> UserStash { get; set; }
-    DbSet<Recipe> Recipe { get; set; }
-    DbSet<RecipeIngredient> RecipeIngredient { get; set; }
-    DbSet<Material> Material { get; set; }
-    DbSet<Category> Category { get; set; }
-    DbSet<Base> Base { get; set; }
+    public DbSet<User> User { get; set; }
+    public DbSet<UserStash> UserStash { get; set; }
+    public DbSet<Recipe> Recipe { get; set; }
+    public DbSet<RecipeIngredient> RecipeIngredient { get; set; }
+    public DbSet<Material> Material { get; set; }
+    public DbSet<Category> Category { get; set; }
+    public DbSet<Base> Base { get; set; }
 }
