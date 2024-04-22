@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using RustStash2.Models;
 
 [Route("api/[controller]")]
 [ApiController]

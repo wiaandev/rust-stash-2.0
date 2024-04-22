@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/charleneferreira/rust-stash-2.0/src/server/server.csproj": {}
+    "c:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\server.csproj": {}
   },
   "projects": {
-    "/Users/charleneferreira/rust-stash-2.0/src/server/server.csproj": {
+    "c:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/charleneferreira/rust-stash-2.0/src/server/server.csproj",
+        "projectUniqueName": "c:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "/Users/charleneferreira/rust-stash-2.0/src/server/server.csproj",
-        "packagesPath": "/Users/charleneferreira/.nuget/packages/",
-        "outputPath": "/Users/charleneferreira/rust-stash-2.0/src/server/obj/",
+        "projectPath": "c:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\server.csproj",
+        "packagesPath": "C:\\Users\\wiaan\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\wiaan\\OneDrive\\Desktop\\rust-stash-2.0\\src\\server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/charleneferreira/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\wiaan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

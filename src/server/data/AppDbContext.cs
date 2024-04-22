@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using RustStash2.Models;
 
 public class AppDbContext : DbContext
 {
